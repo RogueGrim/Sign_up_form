@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+}
+img{
+    height: 100vh;
+}
+.section1{
+    min-height: calc(100vh/3);
+}
+
+.section2{
+    min-height: calc(100vh/3);
+}
+
+.section3{
+    min-height: calc(100vh/3);
+}
