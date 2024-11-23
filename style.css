@@ -12,8 +12,7 @@ body{
     position:absolute;
     width: 100%;
     top:25%;
-    background-color: black;
-    opacity: 0.5; 
+    background-color: rgba(0,0,0,0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,6 +26,7 @@ body{
     padding-top: 10px;    
     width: 25%;
     border-radius: 50%;
+    opacity: 0.7;
 }
 .image{
     height: 100vh;
@@ -76,6 +76,33 @@ form{
     min-height: calc(100vh/3);
     box-shadow: 2px 4px 6px; 
 }
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+input:hover{
+    background-color: rgba(128,128,128,0.1);
+    border: solid 1px blue;
+}
+input:focus{
+    border: solid 1px blue;
+    outline: none;
+}
+input{
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px gray;
+}
+#password:invalid{
+    border: solid 1px red;
+}
+#password:invalid + span::before{
+    content: "*Passwords do not match";
+    color: red;
+}
+
 button{
     max-width: fit-content;
     min-width: 200px;
@@ -94,7 +121,7 @@ a{
 .section3{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
     min-height: calc(100vh/3);
-    margin: 20px;
+    padding: 50px;
 }
